@@ -3,17 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Theme Starter</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Website with Navbar and Footer</title>
+
+  <!-- Include navbar and footer CSS -->
+  <link rel="stylesheet" href="./Components/Navbar/Navbar.css" />
+  <link rel="stylesheet" href="./Components/Footer/Footer.css" />
 </head>
 <body>
-  <h1>Welcome to Your Frontend Theme</h1>
-  
- 
-   <div class="app">
-      <!-- page wiil be loaded here -->
-        
-  </div>
-   <script src="main.js"></script>
+
+  <!-- Placeholder for navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Main content -->
+  <main>
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content.</p>
+  </main>
+
+  <!-- Placeholder for footer -->
+  <div id="footer-container"></div>
+
+  <!-- Include navbar JS -->
+  <script src="./Components/Navbar/Navbar.js"></script>
+
+  <!-- Include footer HTML dynamically -->
+  <script>
+    // Load Navbar
+    fetch('./Components/Navbar/Navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+
+    // Load Footer
+    fetch('./Components/Footer/Footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
 </body>
 </html>
