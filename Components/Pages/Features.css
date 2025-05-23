@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Playfair", serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.navbar-container{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+   
+}
+.upper-navbar{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 20px;
+}
+.upper-navbar span{
+      /* background-color: rgba(225, 0, 0, 0.8); */
+      color: #fff;
+      margin: 10vh;
+      padding: 0 10px;
+      border-radius: 7vh;
+}
+.upper-navbar  h2{
+       color: #fff;
+       font-size: 13px;
+       padding: 0 10px;
+       margin: auto;
+       display: flex;
+       margin-right: auto;
+     
+}
+.upper-navbar .social-icons{
+      display: flex;
+      margin-left: 35rem;
+       
+}
+.social-icons a {
+      color: #fff;
+      margin: 10px;
+      font-size: 15px;
+      font-weight: bold;
+     
+}
+.banner {
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      color: black;
+    }
+
+    .banner-content {
+      width: 100%;
+      /* background-color: rgba(0, 0, 0, 0.5); Optional overlay */
+      padding: 20px;
+    
+    }
+
+    .banner h1 {
+      font-size: 8rem;
+      margin-bottom: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+    }
+
+    .banner p {
+      font-size: 13px;
+      color: gray;
+    }
+
+    @media (max-width: 768px) {
+      .banner h1 {
+        font-size: 2em;
+      }
+
+      .banner p {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .banner {
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      /* .banner-content {
+        background-color: rgba(0, 0, 0, 0.7);
+      } */
+    }
