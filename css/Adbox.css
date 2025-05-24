@@ -1,0 +1,13 @@
+.ad-box {
+  background-color: #dcdcdc;
+  /* margin: 30px; */
+    margin: 20px 0px 20px 0px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px #aaa;
+  font-size: 14px;
+  /* font-weight: bold; */
+  color: #333;
+}

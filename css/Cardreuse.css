@@ -1,0 +1,95 @@
+body {
+  
+  font-family: Arial, sans-serif;
+  /* background-color: #f0f0f0; */
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;       /* gap thoda kam kar diya hai (pehle 10px tha) */
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;       /* 3 cards in a row */
+  overflow: hidden;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image section */
+.card-image {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Button on image bottom-left */
+.card-button {
+  position: absolute;
+  bottom: 0;       /* bilkul bottom */
+  left: 0;         /* bilkul left */
+    /* thoda padding ke liye margin */
+  padding: 4px 8px;
+  background-color: black;
+  border: none;
+  
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.card-image:hover .card-button {
+  background-color: rgb(255, 0, 0);
+}
+
+/* Text section below image */
+.card-text {
+  padding: 15px 20px 20px 20px;
+  color: #222;
+}
+
+.card-text h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.7em;
+}
+
+.card-text h6 {
+  margin: 0 0 12px 0;
+  font-weight: normal;
+  color: #555;
+  font-size: 0.8em;
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.9;
+  color: #666;
+}
+
+#loadMoreBtn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  /* border-radius: 30px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+#loadMoreBtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
